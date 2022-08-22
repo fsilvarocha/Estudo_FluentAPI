@@ -12,6 +12,7 @@ namespace Estudo_FluentAPI.Mapping
         {
             _tableName = TableName;
         }
+
         public virtual void Configure(EntityTypeBuilder<TEntity> builder)
         {
             if (!string.IsNullOrEmpty(_tableName))
